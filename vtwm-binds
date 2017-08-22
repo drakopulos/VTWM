@@ -1,0 +1,121 @@
+#   __                  _   _                 
+#  / _|_   _ _ __   ___| |_(_) ___  _ __  ___ 
+# | |_| | | | '_ \ / __| __| |/ _ \| '_ \/ __|
+# |  _| |_| | | | | (__| |_| | (_) | | | \__ \
+# |_|  \__,_|_| |_|\___|\__|_|\___/|_| |_|___/                                            
+#            _     _           _     
+#           | |__ (_)_ __   __| |___ 
+#           | '_ \| | '_ \ / _` / __|
+#           | |_) | | | | | (_| \__ \
+#           |_.__/|_|_| |_|\__,_|___/
+#
+# The Bindings section usually comes second and is used to specify
+# the functions that should be invoked when keyboard and pointer 
+# buttons are pressed in windows, icons, titles, and frames.
+#
+
+# AutoStart Function (will autostart even on restart)
+Function "VTWM Profile" 
+{ 
+  ! "update-menus &"
+}
+
+Function "move-or-lower" { f.move f.deltastop f.lower }
+Function "move-or-raise" { f.move f.deltastop f.raise }
+#Function "move-or-raise" { f.raise f.deltastop f.move }
+Function "move-or-iconify" { f.move f.deltastop f.iconify }
+
+#
+# KEYBINDS
+#
+Button1 = : root : f.menu "windowops"
+Button2 = : root : f.menu "VTWM Windows"
+Button3 = : root : f.menu "main"
+
+Button1 = m : window|icon : f.function "move-or-raise"
+Button3 = m : window|icon : f.function "move-or-lower"
+Button3 = m4 : window|icon : f.iconify
+
+Button1 = : title : f.function "move-or-raise"
+Button3 = : title : f.lower
+
+Button1 = : frame : f.function "move-or-raise"
+Button3 = : frame : f.resize
+
+Button1 = : icon : f.function "move-or-iconify"
+Button3 = : icon : f.menu "windowops"
+
+"Return" = : iconmgr : f.iconify
+"Return" = m4 : iconmgr : f.iconify
+Button1 = m4 : iconmgr : f.iconify
+Button1 = : iconmgr : f.iconify
+Button3 = : iconmgr : f.warp
+
+Button1 = : virtual | desktop : f.movescreen
+
+# Alt+Tab cycle windows
+WindowRing
+"Tab" = m     : all : f.warpring "next"
+"Tab" = m | s : all : f.warpring "prev"				
+NoWindowRing {
+#  "VTWM Icon Manager"
+  "VTWM Desktop"
+  "clock"
+  "calcurse"
+  "wavemon"
+  "alsa"
+  "xclock"
+  "gmemusage"
+}
+
+# Wrap Icon Manager 
+"h" = m4 : all : f.lefticonmgr
+"j" = m4 : all : f.downiconmgr
+"k" = m4 : all : f.upiconmgr
+"l" = m4 : all : f.righticonmgr
+
+# Launch
+"c" = m4 : all : f.exec "_CLOCK &"
+"t" = m4 : all : f.exec "_TERM &"
+"f" = m4 : all : f.exec "_FILE &"
+"e" = m4 : all : f.exec "_EDITOR &"
+"p" = m4 : all : f.exec "_TASK &"
+"v" = m4 : all : f.exec "_MIXER &"
+"w" = m4 : all : f.exec "_WEB &"
+"m" = m4 : all : f.exec "_PLAYER &"
+"r" = m4 : all : f.restart
+"i" = m4 : all : f.showiconmgr
+"u" = m4 : all : f.hideiconmgr
+
+# aww snap!
+"Up"    = m4 : all : f.topzoom	
+"Down"  = m4 : all : f.bottomzoom
+"Left"  = m4 : all : f.leftzoom
+"Right" = m4 : all : f.rightzoom
+"F11"   = m4 : all : f.fullzoom
+
+# Navigation
+"n"     = m | c : window|title|frame : f.nail
+"Up"    = m | c : all : f.panup    "100"
+"Down"  = m | c : all : f.pandown  "100"
+"Left"  = m | c : all : f.panleft  "100"
+"Right" = m | c : all : f.panright "100"
+"k"  = m | c : all : f.panup    "100"
+"j"  = m | c : all : f.pandown  "100"
+"h"  = m | c : all : f.panleft  "100"
+"l"  = m | c : all : f.panright "100"
+
+# m4 macro calculations to define virtual screen dimensions
+define(SC1, translit(+eval(WIDTH*0)+eval(HEIGHT*0)))
+define(SC2, translit(+eval(WIDTH)+eval(HEIGHT*0)))
+define(SC3, translit(+eval(WIDTH*2)+eval(HEIGHT*0)))
+define(SC4, translit(+eval(WIDTH*0)+eval(HEIGHT+1)))
+define(SC5, translit(+eval(WIDTH)+eval(HEIGHT+1)))
+define(SC6, translit(+eval(WIDTH*2)+eval(HEIGHT+1)))
+# now Alt + 1-6  will cycle workspaces
+"1"   = m4     : all    : f.setrealscreen "SC1"
+"2"   = m4     : all    : f.setrealscreen "SC2"
+"3"   = m4     : all    : f.setrealscreen "SC3"
+"4"   = m4     : all    : f.setrealscreen "SC4"
+"5"   = m4     : all    : f.setrealscreen "SC5"
+"6"   = m4     : all    : f.setrealscreen "SC6"

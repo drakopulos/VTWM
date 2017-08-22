@@ -1,0 +1,68 @@
+################################################
+#  _                         _
+# | | __ _ _   _  ___  _   _| |_
+# | |/ _` | | | |/ _ \| | | | __|
+# | | (_| | |_| | (_) | |_| | |_  
+# |_|\__,_|\__, |\___/ \__,_|\__|
+#          |___/ 
+# 
+# Follow Clock | Icon Manager, Virtual Desktop 
+#
+# This layout requires a clock to be autostarted in 
+# xsession, otherwise desktop won't load. The clock 
+# should be started with title and name "clock" and a minimum 
+# 1 sec sleep in order for the macros to calculate its 
+# geometries. 
+#
+# Icons, Icon Manager and virtual desktop will be fitted 
+# around clock position on desktop. hopefully...
+
+############
+# Padding
+#
+define(`VPAD', 10)
+define(`HPAD', 10)
+
+#############################################################################
+#  Clock
+#
+define(`CVP', esyscmd(xwininfo -name clock | sed "s/+/ /g" | sed "s/-/ /g" | awk '/Corners/{ print $3 }' ))
+define(`CH',  esyscmd(xwininfo -name clock | awk '/Height/{print $2}'))
+define(`CHP', esyscmd(xwininfo -name clock | sed "s/+/ /g" | sed "s/-/ /g" | awk '/Corners/{ print $2 }' ))
+define(`CW',  esyscmd(xwininfo -name clock | awk '/Width/{print $2}'))
+
+#############################################################################
+# VirtualDesktop
+#
+define(VDhoriz, 3) define(VDvert, 2) define(VDscale, 32)
+define(VDWidth, eval(WIDTH * VDhoriz / VDscale))
+define(VDHeight, eval(HEIGHT * VDvert / VDscale))
+define(`VDX_lft', `-HPAD')
+define(`VDX_rgh', `-HPAD)')
+define(`VDY_top', `+VPAD')
+define(`VDY_bot', `-VPAD')
+define(`ClockHorPosTest', `eval(CHP > WIDTH/2)')
+define(`ClockVerPosTest', `eval(CVP > HEIGHT/2)')
+define(`VDx', ifelse(ClockHorPosTest,0,VDX_lft,ClockHorPosTest,1,VDX_rgh))
+define(`VDy', ifelse(ClockVerPosTest,0,VDY_bot,ClockVerPosTest,1,VDY_top))
+define(VDgeometry, translit(VDhoriz*VDvert`'VDx`'VDy, *, x))
+VirtualDesktop  "VDgeometry" VDscale
+
+# Icons
+IconifyByUnmapping
+
+#############################################################################
+# Icon Manager
+#
+ShowIconManager
+define(`ICMWidth',`1550')
+define(`ICMHeight',`20')
+define(`ICMx_lft', `+eval(CW+CHP+HPAD)')
+define(`ICMx_rgh', `+HPAD')
+define(`ICMy_bot', `+eval(CVP)')
+define(`ICMy_top', `+eval(CVP)')
+define(`ICMx', ifelse(ClockHorPosTest,0,ICMx_lft,ClockHorPosTest,1,ICMx_rgh))
+define(`ICMy', ifelse(ClockVerPosTest,0,ICMy_top,ClockVerPosTest,1,ICMy_bot))
+define(ICMR, translit(ICMWidth*ICMHeight`'ICMx`'ICMy, *, x ))
+define(ICC, 12)
+IconManagerGeometry "ICMR" ICC

@@ -1,0 +1,22 @@
+/* XPM */
+static char * xterm_xpm[] = {
+"12 16 3 1 5 7",
+" 	c #100d02",
+".	c #6c4a1e",
+"X	c None",
+"            ",
+" .......... ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .XXXXXXXX. ",
+" .......... ",
+"            "};

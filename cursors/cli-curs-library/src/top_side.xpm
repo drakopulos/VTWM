@@ -1,0 +1,14 @@
+/* XPM */
+static char * top_side_xpm[] = {
+"21 8 3 1",
+" 	c #B8A882",
+".	c #302618",
+"X	c None",
+"                     ",
+" ................... ",
+" .                 . ",
+" . XXXXXXXXXXXXXXX . ",
+" . XXXXXXXXXXXXXXX . ",
+" . XXXXXXXXXXXXXXX . ",
+" . XXXXXXXXXXXXXXX . ",
+"   XXXXXXXXXXXXXXX   "};

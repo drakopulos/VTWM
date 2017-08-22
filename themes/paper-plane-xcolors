@@ -1,0 +1,43 @@
+! paper tree
+*background:   #B2A87E
+*foreground:   #100d02
+*cursorColor:  #100d02
+
+*color0:       #B2A87E
+*color1:       #5e483a
+*color2:       #546025
+*color3:       #6d681e
+*color4:       #6f6951
+*color5:       #7a2626
+*color6:       #26524d
+*color7:       #100d02
+*color8:       #625b40
+*color9:       #5e4536
+*color10:      #546025
+*color11:      #6d681e
+*color12:      #625b40
+*color13:      #7a2a21
+*color14:      #578257
+*color15:      #100d02
+
+! paper tree
+URxvt.background:   #B2A87E
+URxvt.foreground:   #100d02
+URxvt.cursorColor:  #100d02
+
+URxvt.color0:       #B2A87E
+URxvt.color1:       #5e483a
+URxvt.color2:       #546025
+URxvt.color3:       #6d681e
+URxvt.color4:       #6f6951
+URxvt.color5:       #7a2626
+URxvt.color6:       #26524d
+URxvt.color7:       #100d02
+URxvt.color8:       #625b40
+URxvt.color9:       #5e4536
+URxvt.color10:      #546025
+URxvt.color11:      #6d681e
+URxvt.color12:      #625b40
+URxvt.color13:      #7a2a21
+URxvt.color14:      #578257
+URxvt.color15:      #100d02

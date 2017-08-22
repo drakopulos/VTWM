@@ -1,0 +1,33 @@
+/* XPM */
+static char * pdf24x24_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"24 24 4 1",
+" 	c None",
+".	c #5e483a",
+"X	c #B2A87E",
+"o	c #578257",
+/* pixels */
+"  ....................  ",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+".XXXXXooooooooooooXXXXX.",
+".XXXXooooooooooooooXXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXoooooooooooooooooXXX.",
+".XooooooooooooooooooXXX.",
+".XoooXXooXXXoXXXooooXXX.",
+".XoooXoXoXoXoXooooooXXX.",
+".XoooXXooXoXoXXoooooXXX.",
+".XoooXoooXXXoXooooooXXX.",
+".XooooooooooooooooooXXX.",
+".XXoooooooooooooooooXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXXXoooooooooooooooXXX.",
+".XXXXXoooooooooooooXXXX.",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+"  ....................  "};

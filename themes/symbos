@@ -1,0 +1,79 @@
+#                      _      ___  ____  
+#  ___ _   _ _ __ ___ | |__  / _ \/ ___| 
+# / __| | | | '_ ` _ \| '_ \| | | \___ \ 
+# \__ \ |_| | | | | | | |_) | |_| |___) |
+# |___/\__, |_| |_| |_|_.__/ \___/|____/ 
+#      |___/
+#    _   _                         
+#   | |_| |__   ___ _ __ ___   ___ 
+#   | __| '_ \ / _ \ '_ ` _ \ / _ \
+#   | |_| | | |  __/ | | | | |  __/
+#    \__|_| |_|\___|_| |_| |_|\___|
+#
+
+## Background color/image
+syscmd(`hsetroot -fill ~/.config/vtwm/wallpapers/symbos-dragon.xpm')
+#syscmd(`hsetroot -solid "#100d02" -fill ~/.config/vtwm/wallpapers/skull2.xpm')
+
+## Merge xcolors
+syscmd(`xrdb -merge ~/.config/vtwm/themes/symbos-xcolors')
+
+## FONTS (vars)
+include(VTWMD/fonts/fixed-01)
+
+## CURSORS (vars)
+include(VTWMD/cursors/cursor-list-01)
+
+## ICONS
+include(VTWMD/icons/themes/symbos/icons.list)
+
+BorderWidth 1
+FramePadding 8
+
+Color
+{
+  BorderColor "#815924"
+  BorderTileBackground "#6c4a1e"
+  BorderTileForeground "#100d02"
+
+  DefaultBackground         "#100d02"
+  DefaultForeground         "#6c4a1e"
+  TitleBackground           "#100d02"
+  TitleForeground           "#6c4a1e"
+  MenuBackground            "#100d02"
+  MenuForeground            "#6c4a1e"
+  MenuTitleBackground       "#100d02"
+  MenuTitleForeground       "#6c4a1e"
+  MenuShadowColor           "#d09039"
+  IconBackground            "#100d02"
+  IconForeground            "#6c4a1e"
+  IconBorderColor           "#100d02"
+  IconManagerBackground     "#100d02"
+  IconManagerForeground     "#6c4a1e"
+  IconManagerHighlight      "#6c4a1e"
+  RealScreenBackground      "#815924"
+  VirtualBackground         "#100d02"
+  VirtualForeground         "#6c4a1e"
+  DesktopDisplayBackground  "#100d02"
+  DesktopDisplayForeground  "#6c4a1e"
+  DesktopDisplayBorder      "#6c4a1e"
+}
+
+Pixmaps {
+  TitleHighlight           "VTWMD/icons/pixmaps/gray3.xbm"
+  IconManagerPixmap        "VTWMD/icons/pixmaps/colon.xbm"
+  VirtualBackgroundPixmap  "VTWMD/icons/pixmaps/under-dash.xbm"
+  MenuIconPixmap           "VTWMD/icons/pixmaps/menu-symb16x16.xbm"
+}
+
+##  Buttons
+LeftTitleButton "VTWMD/icons/pixmaps/down14x14.xbm" = f.iconify
+RightTitleButton "VTWMD/icons/pixmaps/xkill32.xbm" = f.delete
+RightTitleButton ":resize" = f.resize
+
+Sounds
+{
+ "(vtwm start)"  "SoundDir/start.wav" 30
+ "(vtwm stop)"   "SoundDir/stop.wav" 30
+ "f.iconify"     "SoundDir/nop.wav" 30
+}

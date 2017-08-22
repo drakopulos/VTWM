@@ -1,0 +1,44 @@
+! furukake
+
+URxvt.background:       #302618
+URxvt.foreground:       #B8A882
+URxvt.cursorColor:      #B8A882
+
+URxvt.color0:           #302618
+URxvt.color1:           #86523D
+URxvt.color2:           #A4725F
+URxvt.color3:           #AA8D55
+URxvt.color4:           #A09D70
+URxvt.color5:           #D1BDa0
+URxvt.color6:           #836550
+URxvt.color7:           #E3D0B4
+URxvt.color8:           #CAB98F
+URxvt.color9:           #82614B
+URxvt.color10:          #9E7960
+URxvt.color11:          #B19868
+URxvt.color12:          #BF9E87
+URxvt.color13:          #C9B3a4
+URxvt.color14:          #836550
+URxvt.color15:          #E8E1DC
+! furukake
+
+*background:       #302618
+*foreground:       #B8A882
+*cursorColor:      #B8A882
+
+*color0:           #302618
+*color1:           #86523D
+*color2:           #A4725F
+*color3:           #AA8D55
+*color4:           #A09D70
+*color5:           #D1BDa0
+*color6:           #836550
+*color7:           #E3D0B4
+*color8:           #CAB98F
+*color9:           #82614B
+*color10:          #9E7960
+*color11:          #B19868
+*color12:          #BF9E87
+*color13:          #C9B3a4
+*color14:          #836550
+*color15:          #E8E1DC

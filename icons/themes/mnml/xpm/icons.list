@@ -1,0 +1,119 @@
+#                            _ 
+#  _ __ ___  _ __  _ __ ___ | |
+# | '_ ` _ \| '_ \| '_ ` _ \| |
+# | | | | | | | | | | | | | | |
+# |_| |_| |_|_| |_|_| |_| |_|_|
+#                             
+#   _
+#  (_) ___ ___  _ __  ___ 
+#  | |/ __/ _ \| '_ \/ __|
+#  | | (_| (_) | | | \__ \
+#  |_|\___\___/|_| |_|___/
+#
+# The Variables section must come first and is used to describe the
+# fonts, colors, cursors, border widths, icon and window placement,
+# highlighting,  autoraising, layout of titles, warping, and use of
+# the icon manager.
+#
+
+IconDirectory "VTWMD/icons/themes/mnml/xpm"
+define(`ICON_WIDTH', `24')
+define(`ICON_HEIGHT', `24')
+
+ForceIcons
+Icons {
+# Terminal Emulators
+  "term"                 "term24x24.xpm"
+  "terminal"             "term24x24.xpm"
+  "terminal emulator"    "term24x24.xpm"
+  "urxvt"                "term24x24.xpm"
+  "xterm"                "term24x24.xpm"
+  "terminator"           "term24x24.xpm"
+  "x-terminal-emulator"  "term24x24.xpm"
+# File Managers
+  "file"                 "file24x24.xpm"
+  "file manager"         "file24x24.xpm"
+  "thunar"               "file24x24.xpm"
+  "ranger"               "ranger24x24.xpm"
+  "pcmanfm"              "file24x24.xpm"
+  "spacefm"              "file24x24.xpm"
+  "mc"                   "ranger24x24.xpm"
+# Accessories
+  "xfontsel"             "fonts24x24.xpm"
+  "xcalc"                "calculator24x24.xpm"
+  "galculator"           "calculator24x24.xpm"
+  "file-roller"          "archive24x24.xpm"
+  "search"               "search24x24.xpm"
+  "catfish"              "search24x24.xpm"
+  "xclipboard"           "clipboard24x24.xpm"
+  "calcurse"             "calcurse24x24.xpm"
+  "htop"                 "taskman24x24.xpm"
+  "top"                  "proc24x24.xpm"
+  "nano"		 "edit24x24.xpm"
+  "vim"	                 "edit24x24.xpm"
+  "vim.tiny"             "edit24x24.xpm"
+  "leafpad"		 "edit24x24.xpm"
+  "proc"                 "taskman24x24.xpm"
+  "glances"              "taskman24x24.xpm"
+  "apkg"                 "crunchbang24x24.xpm"
+  "alsamixer"            "vol24x24.xpm"
+  "alsa"                 "vol24x24.xpm"
+  "vol"                  "vol24x24.xpm"
+  "volume"               "vol24x24.xpm"
+  "pavucontrol"          "vol24x24.xpm"
+  "mocp"                 "headphone24x24.xpm"
+  "audacious"            "headphone24x24.xpm"
+  "mpd"                  "headphone24x24.xpm"
+# Network
+  "google-chrome"        "google24x24.xpm"
+  "xombrero"             "internet24x24.xpm"
+  "Iceweasel"            "internet24x24.xpm"
+  "Firefox"              "internet24x24.xpm"
+  "w3m"                  "internet24x24.xpm"
+  "elinks"               "internet24x24.xpm"
+  "links"                "internet24x24.xpm"
+  "Mutt"                 "mail24x24.xpm"
+  "mutt"                 "mail24x24.xpm"
+  "evolution"            "mail24x24.xpm"
+  "evolution"            "mail24x24.xpm"
+  "Irssi"		 "chat24x24.xpm"
+  "xchat"		 "chat24x24.xpm"
+  "hexchat"              "chat24x24.xpm"
+  "weechat"              "chat24x24.xpm"
+  "wpa_gui"              "network24x24.xpm"
+  "ceni"                 "network24x24.xpm"
+  "Wicd Network Manager" "network24x24.xpm"
+  "rtorrent"             "torrent24x24.xpm"
+  "Transmission"         "torrent24x24.xpm"
+  "utorrent"             "torrent24x24.xpm"
+# Office
+  "zathura"              "pdf24x24.xpm"
+  "mupdf"                "pdf24x24.xpm"
+  "okular"               "pdf24x24.xpm"
+  "evince"               "pdf24x24.xpm"
+  "abiword"		 "edit24x24.xpm"
+  "sc"                   "spreadsheet24x24.xpm"
+  "gnumeric"             "spreadsheet24x24.xpm"
+  "libreoffice-calc"     "spreadsheet24x24.xpm"
+  "libreoffice-writer"   "edit24x24.xpm"
+  "libreoffice-base"     "libreoffice-base24x24.xpm"
+  "libreoffice-draw"     "libreoffice-draw24x24.xpm"
+  "libreoffice-impress"  "libreoffice-impress24x24.xpm"
+
+# Graphics
+  "bitmap"               "bitmap24x24.xpm"
+  "pixmap"               "bitmap24x24.xpm"
+  "gimp"		 "gimp24x24.xpm"
+  "gedit"		 "edit24x24.xpm"
+  "mpv"                  "film24x24.xpm"
+  "vlc"                  "film24x24.xpm"
+# VTWM
+  "Binds"                "keyboard24x24.xpm"
+  "Icons"                "icons24x24.xpm"
+  "Main"                 "main24x24.xpm"
+  "Menus"                "menus24x24.xpm"
+  "Fonts"                "fonts24x24.xpm"
+  "Theme"                "theme24x24.xpm"
+  "Layout"               "layout24x24.xpm"
+
+}

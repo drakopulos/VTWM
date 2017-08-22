@@ -1,0 +1,36 @@
+/* XPM */
+static char *user_desktop[] = {
+/* columns rows colors chars-per-pixel */
+"24 24 6 1 ",
+"  c #4C4C4C",
+". c gray30",
+"X c #48ACDC",
+"o c #48ADDC",
+"O c #4AB3E4",
+"+ c None",
+/* pixels */
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"+......................+",
+"+......................+",
+"+......................+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+OOOOOOOOOOOOOOOOOOOOOO+",
+"+XOOOOOOOOOOOOOOOOOOOOX+",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++"
+};

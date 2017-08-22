@@ -1,0 +1,121 @@
+#  ____ _____  _    ____ _____   _____ _   ___     __
+# / ___|_   _|/ \  |  _ \_   _| | ____| \ | \ \   / /
+# \___ \ | | / _ \ | |_) || |   |  _| |  \| |\ \ / / 
+#  ___) || |/ ___ \|  _ < | |   | |___| |\  | \ V /  
+# |____/ |_/_/   \_\_| \_\|_|   |_____|_| \_|  \_/   
+#
+
+
+## VTWM directory
+define(`VTWMD', `HOME/.config/vtwm')
+
+## Sound Directory (I have problems if this is in home dir)
+define(`SoundDir', `/usr/share/sounds/vtwm')
+
+# Setup Theme and Layout env vars. We double define because menus will call current layout/theme for ediing.
+define(`THEME', `define(`CurrentTheme', `VTWMD/themes/$1')')
+define(`LAYOUT', `define(`CurrentLayout', `VTWMD/layouts/$1')')
+
+# snap clock layouts depend on clock being titled "clock"
+define(`_CLOCK', `xclock -digital -strftime %%l:%M%P -geometry 100x35+30+20 -name clock -title clock')
+
+# setup applications env. Keybinds will call _NAME while you set main config wiht NAME
+define(`MIXER', `define(`_MIXER', `$1')')
+define(`TERM', `define(`_TERM', `$1')')
+define(`FILE', `define(`_FILE', `$1')')
+define(`EDITOR', `define(`_EDITOR', `$1')')
+define(`TASK', `define(`_TASK', `$1')')
+define(`PLAYER', `define(`_PLAYER', `$1')')
+define(`WEB', `define(`_WEB', `$1')')
+
+############################################################################################
+# Display
+#
+
+#notification geometry used in menu = bottom fourth of screen
+define(BNOTF, translit(WIDTH*eval(HEIGHT/4)+1-1, *, x))
+
+ResizeRegion    "SouthWest"
+
+#define(`HW', eval(WIDTH/2+WIDTH/3))
+#define(`HH', eval(HEIGHT/2+HEIGHT/3))
+#MaxWindowSize "HW`'x`'HH"
+
+StartIconified { 
+  "term" 
+  "file" 
+  "proc" 
+  "alsa" 
+  "alsamixer"
+  "vol"
+  "volume"
+}
+
+NailedDown {
+  "VTWM Icon Manager"
+  "VTWM Desktop"
+  "clock"
+  "calcurse"
+  "xmessage"
+  "gmemusage"
+  "term"
+  "alsa"
+  "vol"
+  "pavucontrol"
+}
+NoTitle {
+  "VTWM Icon Manager"
+  "VTWM Desktop"
+  "clock"
+  "calcurse"
+  "wavemon"
+  "alsa"
+  "vol"
+  "pavucontrol"
+  "xclock"
+  "xmessage"
+  "gmemusage"
+  "apkg"
+}
+NoBorder {
+  "VTWM Icon Manager"
+  "VTWM Desktop"
+  "clock"
+  "calcurse"
+  "wavemon"
+  "alsa"
+  "vol"
+  "pavucontrol"
+  "xclock"
+  "xmessage"
+  "gmemusage"
+  "apkg"
+}
+IconManagerDontShow {
+  "VTWM Icon Manager"
+  "VTWM Desktop"
+  "clock"
+  "xclock"
+  "wavemon"
+  "calcurse"
+  "xmessage"
+  "gmemusage"
+#  "alsa"
+#  "term"
+#  "file"
+#  "proc"
+}
+DontShowInDisplay {
+  "VTWM Icon Manager"
+  "VTWM Desktop"
+  "clock"
+  "calcurse"
+  "gmemusage"
+  "xmessage"
+  "wavemon"
+  "conky"
+  "vol"
+}
+
+#START MAIN
+include(HOME/.config/vtwm/vtwm-main)

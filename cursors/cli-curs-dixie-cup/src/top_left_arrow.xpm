@@ -1,0 +1,23 @@
+/* XPM */
+static char * top_left_arrow_xpm[] = {
+"19 17 3 1 1 1",
+" 	c None",
+".	c #403720",
+"X	c #c5b994",
+"                   ",
+" ...............   ",
+" .XXXXXXXXX....    ",
+" .XXXXXXXX....     ",
+" .XXXXXXX......... ",
+" .XXXXXXX......... ",
+" .XXXXXXXXXXXXXX.. ",
+" .XXXX..XXXXXXXX.. ",
+" .XXX....XXXXXXX.. ",
+" .XX...  .XXXXXX.. ",
+" .X...    .XXXXX.. ",
+" ....      .XXXX.. ",
+" ...        .XXX.. ",
+"             .XX.. ",
+"              .X.. ",
+"               ... ",
+"                .. "};

@@ -1,0 +1,79 @@
+#                                      _                  
+#  _ __   __ _ _ __   ___ _ __   _ __ | | __ _ _ __   ___ 
+# | '_ \ / _` | '_ \ / _ \ '__| | '_ \| |/ _` | '_ \ / _ \
+# | |_) | (_| | |_) |  __/ |    | |_) | | (_| | | | |  __/
+# | .__/ \__,_| .__/ \___|_|    | .__/|_|\__,_|_| |_|\___|
+# |_|         |_|               |_|                       
+#    _   _                         
+#   | |_| |__   ___ _ __ ___   ___ 
+#   | __| '_ \ / _ \ '_ ` _ \ / _ \
+#   | |_| | | |  __/ | | | | |  __/
+#    \__|_| |_|\___|_| |_| |_|\___|
+#
+
+## Background color/image
+syscmd(`hsetroot -solid "#6f6951"')
+#syscmd(`hsetroot -fill ~/.config/vtwm/wallpapers/forest.jpg')
+
+## Merge Xcolors
+syscmd(`xrdb -merge ~/.config/vtwm/themes/paper-plane-xcolors')
+
+## FONTS (vars)
+include(VTWMD/fonts/fixed-01)
+
+## CURSORS (vars)
+include(VTWMD/cursors/cursor-list-01)
+
+## ICONS
+include(VTWMD/icons/themes/mnml/xpm/icons.list)
+
+IconBorderWidth 0
+FramePadding    6
+
+Color
+{
+  BorderColor "#26524d"
+  BorderTileBackground "#625b40"
+  BorderTileForeground "#B2A87E"
+
+  DefaultBackground         "#100d02"
+  DefaultForeground         "#B2A87E"
+  TitleBackground           "#B2A87E"
+  TitleForeground           "#26524d"
+  MenuBackground            "#B2A87E"
+  MenuForeground            "#26524d"
+  MenuTitleBackground       "#B2A87E"
+  MenuTitleForeground       "#26524d"
+  MenuShadowColor           "#625b40"
+  IconBackground            "#B2A87E"
+  IconForeground            "#100d02"
+  IconBorderColor           "#B2A87E"
+  IconManagerBackground     "#B2A87E"
+  IconManagerForeground     "#26524d"
+  IconManagerHighlight      "#B2A87E"
+  RealScreenBackground      "#26524d"
+  VirtualBackground         "#B2A87E"
+  VirtualForeground         "#26524d"
+  DesktopDisplayBackground  "#100d02"
+  DesktopDisplayForeground  "#B2A87E"
+  DesktopDisplayBorder      "#B2A87E"
+}
+
+Pixmaps {
+   TitleHighlight           "VTWMD/icons/pixmaps/dimple3.xbm"
+   VirtualBackgroundPixmap  "VTWMD/icons/pixmaps/opendot.xbm"
+   IconManagerPixmap        "VTWMD/icons/pixmaps/opendot.xbm"
+
+}
+
+##  Buttons
+LeftTitleButton "VTWMD/icons/pixmaps/dot.xbm" = f.iconify
+RightTitleButton "VTWMD/icons/pixmaps/x12x12.xbm" = f.delete
+RightTitleButton "VTWMD/icons/pixmaps/resize14x14.xbm" = f.resize
+
+Sounds
+{
+ "(vtwm start)"  "SoundDir/paper-start.wav" 30
+ "(vtwm stop)"   "SoundDir/paper-stop.wav" 30
+ "f.iconify"     "SoundDir/iconify.wav" 30
+}

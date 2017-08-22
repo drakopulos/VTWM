@@ -1,0 +1,4 @@
+#define iconify5x5_width 5
+#define iconify5x5_height 5
+static unsigned char iconify5x5_bits[] = {
+   0x10, 0x09, 0x05, 0x03, 0x0f};

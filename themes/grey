@@ -1,0 +1,79 @@
+#  _       _                                
+# | | __ _| |__  ___    __ _ _ __ ___ _   _ 
+# | |/ _` | '_ \/ __|  / _` | '__/ _ \ | | |
+# | | (_| | |_) \__ \ | (_| | | |  __/ |_| |
+# |_|\__,_|_.__/|___/  \__, |_|  \___|\__, |
+#                      |___/          |___/ 
+#  _   _                         
+# | |_| |__   ___ _ __ ___   ___ 
+# | __| '_ \ / _ \ '_ ` _ \ / _ \
+# | |_| | | |  __/ | | | | |  __/
+#  \__|_| |_|\___|_| |_| |_|\___|
+#
+
+## Background
+syscmd(`hsetroot -solid "#737260"')
+
+## Merge xcolors
+syscmd(`xrdb -merge ~/.config/vtwm/themes/grey-xcolors')
+
+## FONTS (vars)
+include(VTWMD/fonts/fixed-02)
+
+## CURSORS (vars)
+include(VTWMD/cursors/cursor-list-01)
+
+## ICONS
+include(VTWMD/icons/themes/mnml/xbm/icons.list)
+
+BorderWidth     1
+FramePadding    6
+IconBorderWidth 1
+NoHighlight
+
+Color
+{
+  BorderColor "#eae5c1"
+  BorderTileBackground "#eae5c1"
+  BorderTileForeground "#36352e"
+
+  DefaultBackground         "#36352e"
+  DefaultForeground         "#eae5c1"
+  TitleBackground           "#737260"
+  TitleForeground           "#eae5c1"
+  MenuBackground            "#737260"
+  MenuForeground            "#eae5c1"
+  MenuTitleBackground       "#737260"
+  MenuTitleForeground       "#efeac4"
+  MenuShadowColor           "#c2bf9c"
+  IconBackground            "#737260"
+  IconForeground            "#eae5c1"
+  IconBorderColor           "#737260"
+  IconManagerBackground     "#737260"
+  IconManagerForeground     "#eae5c1"
+  IconManagerHighlight      "#36352e"
+  RealScreenBackground      "#c2bf9c"
+  VirtualBackground         "#737260"
+  VirtualForeground         "#36352e"
+  DesktopDisplayBackground  "#737260"
+  DesktopDisplayForeground  "#737260"
+  DesktopDisplayBorder      "#eae5c1"
+}
+
+Pixmaps {
+  TitleHighlight           "VTWMD/icons/pixmaps/grid8.xbm"
+  VirtualBackgroundPixmap  "VTWMD/icons/pixmaps/dimple1.xbm"
+  IconManagerPixmap        "VTWMD/icons/pixmaps/dimple2.xbm"
+}
+
+##  Buttons
+LeftTitleButton "VTWMD/icons/pixmaps/ldblarrow.xbm" = f.iconify
+RightTitleButton "VTWMD/icons/pixmaps/x9x9.xbm" = f.delete
+RightTitleButton ":resize" = f.resize
+
+Sounds
+{
+ "(vtwm start)"  "SoundDir/start.wav" 30
+ "(vtwm stop)"   "SoundDir/stop.wav" 30
+ "f.iconify"     "SoundDir/nop.wav" 30
+}

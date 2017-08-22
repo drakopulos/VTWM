@@ -1,0 +1,127 @@
+#                _            
+# __  _____ ___ | | ___  _ __ 
+# \ \/ / __/ _ \| |/ _ \| '__|
+#  >  < (_| (_) | | (_) | |   
+# /_/\_\___\___/|_|\___/|_|   
+#    _   _                         
+#   | |_| |__   ___ _ __ ___   ___ 
+#   | __| '_ \ / _ \ '_ ` _ \ / _ \
+#   | |_| | | |  __/ | | | | |  __/
+#    \__|_| |_|\___|_| |_| |_|\___|
+#
+
+
+## Background color/image
+esyscmd(hsetroot -solid $(appres | awk '/background/{print$2}'))
+
+## FONTS (vars)
+include(VTWMD/fonts/fixed-01)
+
+## CURSORS (vars)
+include(VTWMD/cursors/cursor-list-01)
+
+## ICONS
+include(VTWMD/icons/themes/retro/icons.list)
+
+BorderWidth     1
+FramePadding    6
+TitlePadding 6
+IconBorderWidth 0
+
+##########################################################
+#
+#       Define Colors From Terminal
+#    Depends on appres command from x11-utils
+#    and xresource color definitions in *color: "#" format
+#
+# I use URxvt but thought this was a cleaner approach
+# so i have both URxvt: "#" as well as *color: "#" definitions
+# in my Xresource file. You'll find x11 apps like bitmap / digital xclock
+# / xfontsel / etc... use *color format. 
+#
+define(`_BG', esyscmd(appres | awk '/background/{print$2}' ))
+define(`_FG', esyscmd(appres | awk '/foreground/{print$2}' ))
+define(`_ZERO', esyscmd(appres | awk '/color0/{print$2}' ))
+define(`_ONE', esyscmd(appres | awk '/color1/{print$2}' ))
+define(`_TWO', esyscmd(appres | awk '/color2/{print$2}' ))
+define(`_THREE', esyscmd(appres | awk '/color3/{print$2}' ))
+define(`_FOUR', esyscmd(appres | awk '/color4/{print$2}' ))
+define(`_FIVE', esyscmd(appres | awk '/color5/{print$2}' ))
+define(`_SIX', esyscmd(appres | awk '/color6/{print$2}' ))
+define(`_SEVEN', esyscmd(appres | awk '/color7/{print$2}' ))
+define(`_EIGHT', esyscmd(appres | awk '/color8/{print$2}' ))
+define(`_NINE', esyscmd(appres | awk '/color9/{print$2}' ))
+define(`_TEN', esyscmd(appres | awk '/color10/{print$2}' ))
+define(`_ELEVEN', esyscmd(appres | awk '/color11/{print$2}' ))
+define(`_TWELVE', esyscmd(appres | awk '/color12/{print$2}' ))
+define(`_THIRTEEN', esyscmd(appres | awk '/color13/{print$2}' ))
+define(`_FOURTEEN', esyscmd(appres | awk '/color14/{print$2}' ))
+define(`_FIFTEEN', esyscmd(appres | awk '/color15/{print$2}' ))
+
+# now we need to define a newline so we can translit it out of output above
+define(NL,`
+')
+
+# remove newline and earn proper color definitions
+define(`BG', `translit(_BG, NL)')
+define(`FG', `translit(_FG, NL)')
+define(`ZERO', `translit(_ZERO, NL)')
+define(`ONE', `translit(_ONE, NL)')
+define(`TWO', `translit(_TWO, NL)')
+define(`THREE', `translit(_THREE, NL)')
+define(`FOUR', `translit(_FOUR, NL)')
+define(`FIVE', `translit(_FIVE, NL)')
+define(`SIX', `translit(_SIX, NL)')
+define(`SEVEN', `translit(_SEVEN, NL)')
+define(`EIGHT', `translit(_EIGHT, NL)')
+define(`NINE', `translit(_NINE, NL)')
+define(`TEN', `translit(_TEN, NL)')
+define(`ELEVEN', `translit(_ELEVEN, NL)')
+define(`TWELVE', `translit(_TWELVE, NL)')
+define(`THIRTEEN', `translit(_THIRTEEN, NL)')
+define(`FOURTEEN', `translit(_FOURTEEN, NL)')
+define(`FIFTEEN', `translit(_FIFTEEN, NL)')
+
+#syscmd(`hsetroot -solid "#c5b994"')
+Color
+{
+  BorderColor "TWO"
+  BorderTileBackground "BG"
+  BorderTileForeground "BG"
+
+  DefaultBackground         "BG"
+  DefaultForeground         "FG"
+  TitleBackground           "BG"
+  TitleForeground           "FG"
+  MenuBackground            "BG"
+  MenuForeground            "FG"
+  MenuTitleBackground       "BG"
+  MenuTitleForeground       "FG"
+  MenuShadowColor           "SEVEN"
+  IconBackground            "BG"
+  IconForeground            "FG"
+  IconBorderColor           "BG"
+  IconManagerBackground     "BG"
+  IconManagerForeground     "FG"
+  IconManagerHighlight      "FG"
+  RealScreenBackground      "TWO"
+  VirtualBackground         "BG"
+  VirtualForeground         "BG"
+  DesktopDisplayBackground  "BG"
+  DesktopDisplayForeground  "FG"
+  DesktopDisplayBorder      "FG"
+}
+
+##  Buttons
+LeftTitleButton "VTWMD/icons/pixmaps/dot.xbm" = f.iconify
+RightTitleButton "VTWMD/icons/pixmaps/x12x12.xbm" = f.delete
+RightTitleButton "VTWMD/icons/pixmaps/resize14x14.xbm" = f.resize
+
+
+
+
+
+
+
+
+

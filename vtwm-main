@@ -1,0 +1,49 @@
+#         __ 
+#  _   __/ /__      ______ ___ 
+# | | / / __/ | /| / / __ `__ \
+# | |/ / /_ | |/ |/ / / / / / /
+# |___/\__/ |__/|__/_/ /_/ /_/ 
+#                           
+
+THEME(symbos)
+LAYOUT(snap-clock-icons)
+
+MIXER(x-terminal-emulator -g 34x18-7-3 -name vol -title vol -e alsamixer)
+TERM(x-terminal-emulator -g 75x25+200+130 -name term -title term)
+FILE(x-terminal-emulator -g 75x40+eval(WIDTH + 130)+133 -name file -title file -e ranger)
+EDITOR(x-terminal-emulator -name nano -title nano -e nano)
+TASK(x-terminal-emulator -g 75x40+eval(WIDTH + 700)+133 -name proc -title proc -e htop)
+PLAYER(x-terminal-emulator -title ncmpcpp -name ncmpcpp -e ncmpcpp)
+WEB(x-www-browser)
+
+EnhancedExecResources
+FixManagedVirtualGeometries
+FixTransientVirtualGeometries
+MoveDelta    3
+NoGrabServer
+NoDefaults
+NoRaiseOnMove
+OpaqueMove
+#OpaqueResize
+PrettyZoom
+RestartPreviousState
+RightHandSidePulldownMenus
+StayUpMenus
+WarpCursor
+
+# important to snap virtual desktop panner to snap/fit root window 
+# useful with Alt+Tab cycle windowring function
+SnapRealScreen
+PanDistanceX 100
+PanDistanceY 100
+
+## THEME (vars)
+include(CurrentTheme)
+## LAYOUT (vars)
+include(CurrentLayout)
+## FUNC / KEY
+include(HOME/.config/vtwm/vtwm-binds)
+## MENUS
+include(HOME/.config/vtwm/vtwm-menus)
+## DEB MENU
+include(HOME/.config/vtwm/deb-menu/menudefs.hook)

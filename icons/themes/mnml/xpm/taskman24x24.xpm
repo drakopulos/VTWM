@@ -1,0 +1,33 @@
+/* XPM */
+static char * taskman24x24_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"24 24 4 1",
+" 	c None",
+".	c #7a2626",
+"X	c #B2A87E",
+"o	c #7a2a21",
+/* pixels */
+"  ....................  ",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXoooXXXXXXXXXXXXX.",
+".XXXXXXoooXXXXXXXXXXXXX.",
+".XXXXXXoooXXXXXoooXXXXX.",
+".XX...XoooXXXXXoooXXXXX.",
+".XX...XoooXXXXXoooXXXXX.",
+".XX...XoooX...XoooXXXXX.",
+".XX...XoooX...XoooXXXXX.",
+".XX...XoooX...XoooXXXXX.",
+".XX...XoooX...XoooX...X.",
+".XX...XoooX...XoooX...X.",
+".XX...XoooX...XoooX...X.",
+".XX...XoooX...XoooX...X.",
+".XX...XoooX...XoooX...X.",
+".XX...XoooX...XoooX...X.",
+".XX...XoooX...XoooX...X.",
+".XX...XoooX...XoooX...X.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+"  ....................  "};

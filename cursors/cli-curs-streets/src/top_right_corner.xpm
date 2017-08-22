@@ -1,0 +1,20 @@
+/* XPM */
+static char * top_right_corner_xpm[] = {
+"14 14 3 1",
+" 	c #91875e",
+".	c #100d02",
+"X	c None",
+"              ",
+" ............ ",
+"            . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX . ",
+"XXXXXXXXXXX   "};

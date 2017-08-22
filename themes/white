@@ -1,0 +1,80 @@
+#  _       _         
+# | | __ _| |__  ___ 
+# | |/ _` | '_ \/ __|
+# | | (_| | |_) \__ \
+# |_|\__,_|_.__/|___/
+#    _   _                         
+#   | |_| |__   ___ _ __ ___   ___ 
+#   | __| '_ \ / _ \ '_ ` _ \ / _ \
+#   | |_| | | |  __/ | | | | |  __/
+#    \__|_| |_|\___|_| |_| |_|\___|
+#
+
+## Background color/image
+syscmd(`hsetroot -solid "#eae5c1"')
+
+## Merge xcolor theme
+syscmd(`xrdb -merge ~/.config/vtwm/themes/white-xcolors')
+
+## FONTS (vars)
+include(VTWMD/fonts/fixed-01)
+
+## CURSORS (vars)
+include(VTWMD/cursors/cursor-list-01)
+
+## ICONS
+include(VTWMD/icons/themes/retro/icons.list)
+
+IconBorderWidth 0
+NoHighlight
+
+Color
+{
+  BorderColor "#848163"
+  BorderTileBackground "#eae5c1"
+  BorderTileForeground "#eae5c1"
+
+  DefaultBackground         "#eae5c1"
+  DefaultForeground         "#36352e"
+  TitleBackground           "#eae5c1"
+  TitleForeground           "#36352e"
+  MenuBackground            "#eae5c1"
+  MenuForeground            "#848163"
+  MenuTitleBackground       "#eae5c1"
+  MenuTitleForeground       "#848163"
+  MenuShadowColor           "#848163"
+  IconBackground            "#848163"
+  IconForeground            "#eae5c1"
+  IconBorderColor           "#eae5c1"
+  IconManagerBackground     "#eae5c1"
+  IconManagerForeground     "#848163"
+  IconManagerHighlight      "#848163"
+  RealScreenBackground      "#64624b"
+  VirtualBackground         "#eae5c1"
+  VirtualForeground         "#eae5c1"
+  DesktopDisplayBackground  "#eae5c1"
+  DesktopDisplayForeground  "#36352e"
+  DesktopDisplayBorder      "#36352e"
+}
+
+Pixmaps {
+  TitleHighlight           "VTWMD/icons/pixmaps/under-dash.xbm"
+  IconManagerPixmap        "VTWMD/icons/pixmaps/colon.xbm"
+}
+
+##  Buttons
+LeftTitleButton "VTWMD/icons/pixmaps/square8x8.xbm" = f.iconify
+RightTitleButton "VTWMD/icons/pixmaps/x5x5.xbm" = f.delete
+RightTitleButton ":resize" = f.resize
+
+Sounds
+{
+ "(vtwm start)"   "SoundDir/start.wav" 30
+ "(vtwm stop)"    "SoundDir/stop.wav" 30
+  "f.iconify"     "SoundDir/nop.wav" 30
+}
+
+NoBorder
+{
+apkg
+}

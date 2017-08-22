@@ -1,0 +1,26 @@
+#   __             _       
+#  / _| ___  _ __ | |_ ___ 
+# | |_ / _ \| '_ \| __/ __|
+# |  _| (_) | | | | |_\__ \
+# |_|  \___/|_| |_|\__|___/
+#                         
+#  The Variables section must come first and is used to describe
+#  the  fonts,  colors,  cursors, border widths, icon and window
+#  placement, highlighting, autoraising, layout of titles, warping
+#  and use of the icon manager.
+#
+
+TitleFont               "-*-fixed-medium-r-normal-*-10-*-*-*-c-*-*-1"
+
+ResizeFont              "-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-*-*"
+
+MenuFont                "-*-fixed-medium-r-normal-*-10-*-*-*-c-*-*-1"
+
+MenuTitleFont           "-*-fixed-medium-r-normal-*-13-*-*-*-c-*-*-1"
+
+IconFont                "-*-fixed-medium-r-normal-*-10-*-*-*-c-*-*-1"
+
+InfoFont                "-adobe-helvetica-bold-r-normal--*-100-*-*-*-*-*-*"
+
+IconManagerFont         "-*-fixed-medium-r-normal-*-10-*-*-*-c-*-*-1"
+

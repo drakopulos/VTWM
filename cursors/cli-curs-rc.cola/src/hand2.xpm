@@ -1,0 +1,23 @@
+/* XPM */
+static char * hand2_xpm[] = {
+"19 17 3 1 17 1",
+" 	c None",
+".	c #B8A882",
+"X	c #28231D",
+"                   ",
+"   ............... ",
+"    ....XXXXXXXXX. ",
+"     ....XXXXXXXX. ",
+" .........XXXXXXX. ",
+" .........XXXXXXX. ",
+" ..XXXXXXXXXXXXXX. ",
+" ..XXXXXXXX..XXXX. ",
+" ..XXXXXXX....XXX. ",
+" ..XXXXXX.  ...XX. ",
+" ..XXXXX.    ...X. ",
+" ..XXXX.      .... ",
+" ..XXX.        ... ",
+" ..XX.             ",
+" ..X.              ",
+" ...               ",
+" ..                "};

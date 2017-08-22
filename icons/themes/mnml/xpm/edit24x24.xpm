@@ -1,0 +1,33 @@
+/* XPM */
+static char * edit24x24_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"24 24 4 1",
+" 	c None",
+".	c #5e483a",
+"X	c #B2A87E",
+"o	c #578257",
+/* pixels */
+"  ....................  ",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+".XXoX.............XXXXX.",
+".XXoX.ooooooooo.o..XXXX.",
+".XXXX.ooooooooo.oo..XXX.",
+".XXoX....oooooo.ooo.XXX.",
+".XXoX.ooooooooo.....XXX.",
+".XXoX.....ooooooooo.XXX.",
+".XXoX.ooooooooooooo.XXX.",
+".XXoX.........ooooo.XXX.",
+".XXoX.ooooooooooooo.XXX.",
+".XXoX.........ooooo.XXX.",
+".XXoX.ooooooooooooo.XXX.",
+".XXoX.........ooooo.XXX.",
+".XXoX.ooooooooooooo.XXX.",
+".XXoX.........ooooo.XXX.",
+".XXoX.ooooooooooooo.XXX.",
+".XXoX.........ooooo.XXX.",
+".XXoX.ooooooooooooo.XXX.",
+".XXXX.ooooooooooooo.XXX.",
+".XXoX.ooooooooooooo.XXX.",
+".XXoX...............XXX.",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+"  ....................  "};

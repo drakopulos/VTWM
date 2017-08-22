@@ -1,0 +1,4 @@
+#define Stripple_width 2
+#define Stripple_height 2
+static unsigned char Stripple_bits[] = {
+   0x01, 0x00};

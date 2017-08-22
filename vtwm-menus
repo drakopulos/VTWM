@@ -1,0 +1,153 @@
+#  _ __ ___   ___ _ __  _   _ ___ 
+# | '_ ` _ \ / _ \ '_ \| | | / __|
+# | | | | | |  __/ | | | |_| \__ \
+# |_| |_| |_|\___|_| |_|\__,_|___/
+# 
+# all the things!
+#
+# The Menus section gives any user-defined menus 
+# (containing functions to be invoked or commands to be executed).
+#
+
+menu "main"{
+  "Run Program"    !  "dmenu-bind.sh &"
+  "Terminal"       !  "_TERM &"
+  "Web Browser"    !  "_WEB &"
+  "File Manager"   !  "_FILE &"
+  "Task Manager"   !  "_TASK &"
+  "Editor"         !  "_EDITOR &"
+  "Player"         !  "_PLAYER &"
+  ""               f.separator
+  "Graphics"       f.menu  "/Debian/Applications/Graphics"
+  "Sound & Video"  f.menu  "Sound & Video"
+  "Office"         f.menu  "/Debian/Applications/Office"
+  ""               f.separator
+  "Configuration"  f.menu  "Configure"
+  "Networking"     f.menu  "/Debian/Applications/Network"
+  "System"         f.menu  "System"
+  ""               f.separator
+  "Exit"           f.menu "Quit-Verify"
+}
+
+#
+#  Sub Menus
+#
+
+menu "Configure"
+{
+  "VTWM"  f.menu "VTWM"
+  "X"     f.menu "X"
+  "Bash"  f.menu "bash"
+}
+
+menu "System" 
+{
+  "Edit Sources"    !  "x-terminal-emulator -g 100x30 -name sources -title sources -e sudo editor /etc/apt/sources.list &"
+  "Update Sources"  !  "x-terminal-emulator -g 100x30 -name apt-update -title apt-update -e sudo apt-get update &"
+  "Disk Space"      !  "df -Th --total 2>&1 | xmessage -g -1-1 -font -*-fixed-medium-r-normal-*-10-100-*-*-c-*-*-* -file - &"
+  "Services"        !  "service --status-all | grep +  2>&1 | xmessage -g -0-0 -font -*-fixed-medium-r-normal-*-10-100-*-*-c-*-*-* -file - &"
+  "Memory Stats"    !  "free -h 2>&1 | xmessage -g -1-1 -font -*-fixed-medium-r-normal-*-10-100-*-*-c-*-*-* -file - &"
+  "apkg"            !  "x-terminal-emulator -g 94x38 -name apkg -e /home/gako/bin/dialog/apkg &"
+  "systemd"             f.menu  "systemd"
+  "Hardware"            f.menu  "/Debian/Applications/System/Hardware"
+  "Monitoring"          f.menu  "/Debian/Applications/System/Monitoring"
+  "Package Management"  f.menu  "/Debian/Applications/System/Package Management"
+  "Search"              f.menu  "/Debian"
+}
+
+menu "systemd"
+{
+"systemd-cgls"     ! "x-terminal-emulator -g 100x30 -name systemd-cgls -title systemd-cgls -e systemd-cgls &"
+"systemd-cgtop"    ! "x-terminal-emulator -g 100x30 -name systemd-cgtop -title systemd-cgtop -e systemd-cgtop &"
+"List Units"       ! "systemctl list-units 2>&1 | xmessage -g  BNOTF -font -*-fixed-medium-r-normal-*-10-100-*-*-c-*-*-* -file - &"
+"List Unit Files"  ! "systemctl list-unit-files 2>&1 | xmessage -g BNOTF -font -*-fixed-medium-r-normal-*-10-100-*-*-c-*-*-* -file - &"
+}
+
+menu "bash"
+{
+"Edit .bashrc"          !  "x-terminal-emulator -g 100x30 -title bashrc -e editor HOME/.bashrc &"
+"Edit .bash_aliases"    !  "x-terminal-emulator -g 100x30 -title bash_aliases -e editor HOME/.bash_aliases &"
+"Edit .bash_functions"  !  "x-terminal-emulator -g 100x30 -title bash_functions -e editor HOME/.bash_functions &"
+}
+
+menu "X" 
+{
+  "Edit .xinitrc"     !  "x-terminal-emulator -g 100x30 -title xinitrc -e editor HOME/.xinitrc &"
+  "Edit .Xresources"  !  "x-terminal-emulator -g 100x30 -title Xresources -e editor HOME/.Xresources &"
+  "View Resources"    !  "xrdb -query 2>&1 | sort | xmessage -g -1-1 -font -*-fixed-medium-r-normal-*-10-100-*-*-c-*-*-* -file - &"
+  "View Font"         !  "xfd -fn $(xrdb -query | awk '/font/{print$2}') &"
+  "Font Aliases"      !  "xfontsel &"
+}
+
+menu "VTWM" 
+{
+  "Show Icon Manager"  f.showiconmgr
+  "Hide Icon Manager"  f.hideiconmgr
+  "Keybinds"       ! "cat VTWMD/README-keybinds.txt 2>&1 | xmessage -g -1-1 -font -*-fixed-medium-r-normal-*-10-100-*-*-c-*-*-* -file - &"
+  ""                   f.separator
+  "Edit Env"       ! "x-terminal-emulator -g 111x30 -title Main -e editor HOME/.config/vtwm/vtwm-env &"
+  "Edit Main"      ! "x-terminal-emulator -g 111x30 -title Main -e editor HOME/.config/vtwm/vtwm-main &"
+  "Edit Menus"     ! "x-terminal-emulator -g 140x30 -title Menus -e editor HOME/.config/vtwm/vtwm-menus &"
+  "Edit Binds"     ! "x-terminal-emulator -g 100x30 -title Binds -e editor HOME/.config/vtwm/vtwm-binds &"
+  "Edit Theme"     ! "x-terminal-emulator -g 75x45 -title Theme -e editor CurrentTheme &"
+  "Edit Layout"    ! "x-terminal-emulator -g 107x30 -title Layout -e editor CurrentLayout &"
+  "Design Icons"   f.menu "Bitmap"
+  "Help"           f.title
+  "VTWM Man Page"      ! "x-terminal-emulator -g 100x30 -title VTWM man page -e man vtwm &"
+  "GNU M4 Macro Info"  ! "x-terminal-emulator -g 100x30 -title GNU M4 Info -e info m4 &"
+}
+
+menu "Bitmap"
+{
+"xbm icons"  f.menu  "xbm"
+"xpm icons"  f.menu  "xpm"
+}
+
+menu "xbm"
+{
+"24x24"  !  "bitmap -size 24x24 -axes -grid -proportional HOME/.config/vtwm/icons/themes/temp24x24.xbm &"
+"48x48"  !  "bitmap -size 48x48 -axes -grid -proportional HOME/.config/vtwm/icons/themes/temp48x48.xbm &"
+}
+
+menu "xpm"
+{
+"24x24"  !  "pixmap -size 24x24 +grid +axes +proportional -f HOME/.config/vtwm/icons/themes/temp24x24.xpm &"
+"48x48"  !  "pixmap -size 48x48 +grid +axes +proportional -f HOME/.config/vtwm/icons/themes/temp48x48.xpm &"
+}
+
+menu "Sound & Video"
+{
+  "Video"  f.menu "/Debian/Applications/Video"
+  "Sound"  f.menu "/Debian/Applications/Sound"
+}
+
+menu "Graphics"
+{
+  "Applications"  f.menu "/Debian/Applications/Graphics"
+  "Screenshot"    f.menu "Scrot"
+}
+
+menu "Scrot"
+{
+  "now"            ! "scrot &"
+  "in 5 seconds"   ! "scrot -d5 &"
+  "in 10 seconds"  ! "scrot -d 10 &"
+  "select"         ! "scrot -s &"
+}
+
+menu "Quit-Verify"
+{
+  "Restart VTWM"  f.restart
+  "Quit VTWM"     f.quit
+  "Reboot"        ! "systemctl reboot"
+  "Poweroff"      ! "systemctl poweroff"
+}
+
+menu "windowops"
+{
+  ":: pin"  f.nail
+  "^ max"   f.fullzoom
+  "X kill"  f.destroy
+  "? info"  f.identify
+}
+

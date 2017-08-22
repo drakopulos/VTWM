@@ -1,0 +1,81 @@
+#                             _     _                       
+#   ___ _ __ _   _ _ __   ___| |__ | |__   __ _ _ __   __ _ 
+#  / __| '__| | | | '_ \ / __| '_ \| '_ \ / _` | '_ \ / _` |
+# | (__| |  | |_| | | | | (__| | | | |_) | (_| | | | | (_| |
+#  \___|_|   \__,_|_| |_|\___|_| |_|_.__/ \__,_|_| |_|\__, |
+#                                                     |___/ 
+#    _   _                         
+#   | |_| |__   ___ _ __ ___   ___ 
+#   | __| '_ \ / _ \ '_ ` _ \ / _ \
+#   | |_| | | |  __/ | | | | |  __/
+#    \__|_| |_|\___|_| |_| |_|\___|
+#
+
+## Background color/image
+syscmd(`hsetroot -solid "#2e3436" -center ~/.config/vtwm/wallpapers/crunchbang48x48-eae5c1.png')
+
+## Merge Xcolors
+syscmd(`xrdb -merge ~/.config/vtwm/themes/crunchbang-xcolors')
+
+## FONTS (vars)
+include(VTWMD/fonts/helvetica-small)
+
+## CURSORS (vars)
+include(VTWMD/cursors/cursor-list-01)
+
+## ICONS
+include(VTWMD/icons/themes/mnml/xbm/icons.list)
+
+MenuBevelWidth 1
+BorderWidth 1
+IconBorderWidth 0
+NoMenuShadows
+FramePadding    2
+
+Color
+{
+  BorderColor              "#d8d8d8"
+  BorderTileBackground     "#DBDBDB"
+  BorderTileForeground     "#333333"
+  DefaultBackground         "#DBDBDB"
+  DefaultForeground         "#333333"
+  TitleBackground           "#CECECE"
+  TitleForeground           "#101010"
+  MenuBackground            "#3a3a3a"
+  MenuForeground            "#e6e6e6"
+  MenuTitleBackground       "#3a3a3a"
+  MenuTitleForeground       "#e6e6e6"
+#  MenuShadowColor          "#101010"
+  IconBackground            "#2e3436"
+  IconForeground            "#d8d8d8"
+  IconBorderColor           "#cecece"
+  IconManagerBackground     "#3a3a3a"
+  IconManagerForeground     "#eeeeec"
+  IconManagerHighlight      "#eeeeec"
+  RealScreenBackground      "#cecece"
+  VirtualBackground         "#2e3436"
+  VirtualForeground         "#d8d8d8"
+  DesktopDisplayBackground  "#3a3a3a"
+  DesktopDisplayForeground  "#3a3a3a"
+  DesktopDisplayBorder      "#101010"
+}
+
+Pixmaps {
+  TitleHighlight  "VTWMD/icons/pixmaps/white.xbm"
+  MenuIconPixmap  "VTWMD/icons/pixmaps/rarrow8x9.xbm"
+  VirtualBackgroundPixmap  "VTWMD/icons/pixmaps/grid2.xbm"
+  IconManagerPixmap        "VTWMD/icons/pixmaps/colon.xbm"
+}
+
+## Buttons
+LeftTitleButton   "VTWMD/icons/pixmaps/nail9x10.xbm"        = f.nail
+LeftTitleButton   "VTWMD/icons/pixmaps/minus9x10.xbm"       = f.iconify
+RightTitleButton  "VTWMD/icons/pixmaps/crunchbang10x8.xbm"  = f.delete
+RightTitleButton  "VTWMD/icons/pixmaps/resize5x5.xbm"       = f.resize
+
+Sounds
+{
+ "(vtwm start)"  "SoundDir/paper-start.wav" 30
+ "(vtwm stop)"   "SoundDir/paper-stop.wav" 30
+ "f.iconify"     "SoundDir/iconify.wav" 30
+}

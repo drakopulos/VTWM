@@ -1,0 +1,4 @@
+#define resize5x5_width 5
+#define resize5x5_height 5
+static unsigned char resize5x5_bits[] = {
+   0x1e, 0x18, 0x14, 0x12, 0x01};

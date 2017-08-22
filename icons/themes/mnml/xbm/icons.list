@@ -1,0 +1,116 @@
+#                            _ 
+#  _ __ ___  _ __  _ __ ___ | |
+# | '_ ` _ \| '_ \| '_ ` _ \| |
+# | | | | | | | | | | | | | | |
+# |_| |_| |_|_| |_|_| |_| |_|_|
+#                             
+#   _
+#  (_) ___ ___  _ __  ___ 
+#  | |/ __/ _ \| '_ \/ __|
+#  | | (_| (_) | | | \__ \
+#  |_|\___\___/|_| |_|___/
+#
+# The Variables section must come first and is used to describe the
+# fonts, colors, cursors, border widths, icon and window placement,
+# highlighting,  autoraising, layout of titles, warping, and use of
+# the icon manager.
+#
+
+IconDirectory "VTWMD/icons/themes/mnml/xbm"
+define(`ICON_WIDTH', `24')
+define(`ICON_HEIGHT', `24')
+
+ForceIcons
+Icons {
+# Terminal Emulators
+  "term"                 "term24x24.xbm"
+  "terminal"             "term24x24.xbm"
+  "terminal emulator"    "term24x24.xbm"
+  "urxvt"                "term24x24.xbm"
+  "xterm"                "term24x24.xbm"
+  "terminator"           "term24x24.xbm"
+  "x-terminal-emulator"  "term24x24.xbm"
+# File Managers
+  "file"                 "file24x24.xbm"
+  "file manager"         "file24x24.xbm"
+  "thunar"               "file24x24.xbm"
+  "ranger"               "ranger24x24.xbm"
+  "pcmanfm"              "file24x24.xbm"
+  "spacefm"              "file24x24.xbm"
+  "mc"                   "ranger24x24.xbm"
+# Accessories
+  "xcalc"                "calculator24x24.xbm"
+  "galculator"           "calculator24x24.xbm"
+  "file-roller"          "archive24x24.xbm"
+  "search"               "search24x24.xbm"
+  "catfish"              "search24x24.xbm"
+  "xclipboard"           "clipboard24x24.xbm"
+  "calcurse"             "calcurse24x24.xbm"
+  "htop"                 "taskman24x24.xbm"
+  "top"                  "proc24x24.xbm"
+  "nano"		 "edit24x24.xbm"
+  "vim"	                 "edit24x24.xbm"
+  "vim.tiny"             "edit24x24.xbm"
+  "leafpad"		 "edit24x24.xbm"
+  "proc"                 "taskman24x24.xbm"
+  "glances"              "taskman24x24.xbm"
+  "apkg"                 "crunchbang24x24.xbm"
+  "alsamixer"            "vol24x24.xbm"
+  "alsa"                 "vol24x24.xbm"
+  "vol"                  "vol24x24.xbm"
+  "volume"               "vol24x24.xbm"
+  "pavucontrol"          "vol24x24.xbm"
+  "mocp"                 "headphone24x24.xbm"
+  "audacious"            "headphone24x24.xbm"
+  "mpd"                  "headphone24x24.xbm"
+# Network
+  "google-chrome"        "google24x24.xbm"
+  "xombrero"             "internet24x24.xbm"
+  "Iceweasel"            "internet24x24.xbm"
+  "Firefox"              "internet24x24.xbm"
+  "w3m"                  "internet24x24.xbm"
+  "elinks"               "internet24x24.xbm"
+  "links"                "internet24x24.xbm"
+  "Mutt"                 "mail24x24.xbm"
+  "mutt"                 "mail24x24.xbm"
+  "evolution"            "mail24x24.xbm"
+  "Evolution"            "mail24x24.xbm"
+  "Irssi"		 "chat24x24.xbm"
+  "xchat"		 "chat24x24.xbm"
+  "hexchat"              "chat24x24.xbm"
+  "weechat"              "chat24x24.xbm"
+  "wpa_gui"              "network24x24.xbm"
+  "ceni"                 "network24x24.xbm"
+  "Wicd Network Manager" "network24x24.xbm"
+  "rtorrent"             "torrent24x24.xbm"
+  "transmission"         "torrent24x24.xbm"
+  "utorrent"             "torrent24x24.xbm"
+# Office
+  "zathura"              "pdf24x24.xbm"
+  "mupdf"                "pdf24x24.xbm"
+  "okular"               "pdf24x24.xbm"
+  "evince"               "pdf24x24.xbm"
+  "abiword"		 "edit24x24.xbm"
+  "sc"                   "spreadsheet24x24.xbm"
+  "gnumeric"             "spreadsheet24x24.xbm"
+  "libreoffice-writer"   "edit24x24.xbm"
+  "libreoffice-calc"     "spreadsheet24x24.xbm"
+  "libreoffice-draw"     "libreoffice-draw24x24.xbm"
+  "libreoffice-base"     "libreoffice-base24x24.xbm"
+  "libreoffice-impress"  "libreoffice-impress24x24.xbm"
+# Graphics
+  "bitmap"               "bitmap24x24.xbm"
+  "pixmap"               "bitmap24x24.xbm"
+  "gimp"		 "gimp24x24.xbm"
+  "gedit"		 "edit24x24.xbm"
+  "mpv"                  "film24x24.xbm"
+  "vlc"                  "film24x24.xbm"
+# VTWM
+  "Binds"                "keyboard24x24.xbm"
+  "Icons"                "icons24x24.xbm"
+  "Main"                 "main24x24.xbm"
+  "Menus"                "menus24x24.xbm"
+  "Fonts"                "fonts24x24.xbm"
+  "Theme"                "theme24x24.xbm"
+  "Layout"               "layout24x24.xbm"
+}

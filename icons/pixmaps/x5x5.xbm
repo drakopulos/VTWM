@@ -1,0 +1,4 @@
+#define x5x5_width 5
+#define x5x5_height 5
+static unsigned char x5x5_bits[] = {
+   0x11, 0x0a, 0x04, 0x0a, 0x11};

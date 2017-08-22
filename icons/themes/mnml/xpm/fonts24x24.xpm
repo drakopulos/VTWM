@@ -1,0 +1,32 @@
+/* XPM */
+static char * fonts24x24_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"24 24 3 1",
+" 	c None",
+".	c #5e483a",
+"X	c #B2A87E",
+/* pixels */
+"  ....................  ",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXX...XXXXXXXXXXXXXX.",
+".XXX.......XXXXXXXXXXXX.",
+".XXX.......XXXXXXX.XXXX.",
+".XXX..XXX..XXXXXX..XXXX.",
+".XXX..XXX..XX......XXXX.",
+".XXX.......XX......XXXX.",
+".XXX..XXX..XX..XX..XXXX.",
+".XXX..XXX..XX..XX..XXXX.",
+".XXX..XXX..XX.......XXX.",
+".X...XXXX...X.......XXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+"  ....................  "};

@@ -1,0 +1,100 @@
+#                            _ 
+#  _ __ ___  _ __  _ __ ___ | |
+# | '_ ` _ \| '_ \| '_ ` _ \| |
+# | | | | | | | | | | | | | | |
+# |_| |_| |_|_| |_|_| |_| |_|_|
+#                             
+#   _
+#  (_) ___ ___  _ __  ___ 
+#  | |/ __/ _ \| '_ \/ __|
+#  | | (_| (_) | | | \__ \
+#  |_|\___\___/|_| |_|___/
+#
+# The Variables section must come first and is used to describe the
+# fonts, colors, cursors, border widths, icon and window placement,
+# highlighting,  autoraising, layout of titles, warping, and use of
+# the icon manager.
+#
+
+IconDirectory "VTWMD/icons/themes/symbos"
+define(`ICON_WIDTH', `48')
+define(`ICON_HEIGHT', `48')
+
+ForceIcons
+Icons {
+# Terminal Emulators
+  "term"                 "term.xpm"
+  "terminal"             "term.xpm"
+  "terminal emulator"    "term.xpm"
+  "urxvt"                "cli.xpm"
+  "xterm"                "cli.xpm"
+  "terminator"           "terminator.xpm"
+  "x-terminal-emulator"  "term.xpm"
+# File Managers
+  "file"                 "file.xpm"
+  "file manager"         "file.xpm"
+  "thunar"               "file.xpm"
+  "ranger"               "ranger.xpm"
+  "pcmanfm"              "file.xpm"
+  "spacefm"              "file.xpm"
+  "mc"                   "file.xpm"
+# Accessories
+  "xcalc"                "calculator.xpm"
+  "galculator"           "calculator.xpm"
+  "file-roller"          "file-roller.xpm"
+  "search"               "search.xpm"
+  "catfish"              "search.xpm"
+  "xclipboard"           "clipboard.xpm"
+  "htop"                 "proc.xpm"
+  "top"                  "proc.xpm"
+  "nano"		 "edit.xpm"
+  "gedit"		 "edit.xpm"
+  "vim"	                 "edit.xpm"
+  "vim.tiny"             "edit.xpm"
+  "leafpad"		 "edit.xpm"
+  "proc"                 "proc.xpm"
+  "glances"              "proc.xpm"
+  "alsamixer"            "vol.xpm"
+  "alsa"                 "vol.xpm"
+  "vol"                  "vol.xpm"
+  "volume"               "vol.xpm"
+  "pavucontrol"          "vol.xpm"
+  "mocp"                 "record.xpm"
+  "audacious"            "record.xpm"
+  "mpd"                  "record.xpm"
+# Network
+  "google-chrome"        "internet.xpm"
+  "xombrero"             "internet.xpm"
+  "Iceweasel"            "internet.xpm"
+  "Firefox"              "internet.xpm"
+  "w3m"                  "internet.xpm"
+  "elinks"               "internet.xpm"
+  "links"                "internet.xpm"
+  "Irssi"		 "chat.xpm"
+  "xchat"		 "chat.xpm"
+  "hexchat"              "chat.xpm"
+  "weechat"              "chat.xpm"
+  "wpa_gui"              "network.xpm"
+  "ceni"                 "network.xpm"
+  "Wicd Network Manager" "network.xpm"
+  "rtorrent"             "torrent.xpm"
+  "Transmission"         "torrent.xpm"
+  "utorrent"             "torrent.xpm"
+# Office
+  "zathura"              "pdf.xpm"
+  "mupdf"                "pdf.xpm"
+  "okular"               "pdf.xpm"
+  "evince"               "pdf.xpm"
+  "abiword"		 "edit24x24.xpm"
+# Graphics
+  "mpv"                  "film.xpm"
+  "vlc"                  "film.xpm"
+# VTWM
+  "Binds"                "func.xpm"
+  "Main"                 "main.xpm"
+  "Menus"                "menus.xpm"
+  "Fonts"                "fonts.xpm"
+  "Theme"                "theme.xpm"
+  "Layout"               "layout.xpm"
+
+}

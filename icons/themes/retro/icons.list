@@ -1,0 +1,111 @@
+# _
+#(_) ___ ___  _ __  ___ 
+#| |/ __/ _ \| '_ \/ __|
+#| | (_| (_) | | | \__ \
+#|_|\___\___/|_| |_|___/
+#
+# The Variables section must come first and is used to describe the
+# fonts, colors, cursors, border widths, icon and window placement,
+# highlighting,  autoraising, layout of titles, warping, and use of
+# the icon manager.
+#
+ForceIcons
+IconDirectory "VTWMD/icons/themes/retro"
+
+define(`ICON_WIDTH', `48')
+define(`ICON_HEIGHT', `48')
+
+Icons {
+# Terminal Emulator
+  "terminal"             "term48x48.xbm"
+  "terminator"           "terminator48x48.xbm"
+  "x-terminal-emulator"  "term48x48.xbm"
+  "urxvt"                "term48x48.xbm"
+  "term"                 "term48x48.xbm"
+  "xterm"                "term48x48.xbm"
+# FIle Managers
+  "ranger"               "ranger48x48.xbm"
+  "file"                 "file48x48.xbm"
+  "thunar"               "file48x48.xbm"
+  "pcmanfm"              "file48x48.xbm"
+  "spacefm"              "file48x48.xbm"
+  "mc"                   "file48x48.xbm"
+# Accessories
+  "xcalc"                "calculator48x48.xbm"
+  "galculator"           "calculator48x48.xbm"
+  "calcurse"             "calcurse48x48.xbm"
+  "xclipboard"           "clipboard48x48.xbm"
+  "proc"                 "task48x48.xbm"
+  "top"                  "task48x48.xbm"
+  "htop"                 "htop48x48.xbm"
+  "glances"              "task48x48.xbm"
+  "apkg"                 "crunchbang48x48.xbm"
+  "nano"                 "edit48x48.xbm"
+  "gedit"                "edit48x48.xbm"
+  "vim"                  "edit48x48.xbm"
+  "vim.tiny"             "edit48x48.xbm"
+  "leafpad"              "edit48x48.xbm"
+  "filezilla"            "ftp48x48.xbm"
+  "file-roller"          "archive48x48.xbm"
+  "catfish"              "search48x48.xbm"
+  "search"               "search48x48.xbm"
+# Sound
+  "alsamixer"            "vol48x48.xbm"
+  "alsa"                 "vol48x48.xbm"
+  "vol"                  "vol48x48.xbm"
+  "volume"               "vol48x48.xbm"
+  "pavucontrol"          "vol48x48.xbm"
+  "mocp"                 "boombox48x48.xbm"
+  "audacious"            "headphones48x48.xbm"
+  "ncmpcpp"               "boombox48x48.xbm"
+# Network
+  "xombrero"             "internet48x48.xbm"
+  "google-chrome"        "google48x48.xbm"
+  "Iceweasel"            "internet48x48.xbm"
+  "Firefox"              "firefox48x48.xbm"
+  "w3m"                  "internet48x48.xbm"
+  "elinks"               "internet48x48.xbm"
+  "Elinks"               "internet48x48.xbm"
+  "links"                "internet48x48.xbm"
+  "links"                "internet48x48.xbm"
+  "Links"                "internet48x48.xbm"
+  "Links 2 (text)"       "internet48x48.xbm"
+  "Mutt"                 "mail48x48.xbm"
+  "mutt"                 "mail48x48.xbm"
+  "evolution"            "mail48x48.xbm"
+  "Evolution"            "mail48x48.xbm"
+  "irssi"                "chat48x48.xbm"
+  "Irssi"                "chat48x48.xbm"
+  "xchat"                "chat48x48.xbm"
+  "hexchat"              "chat48x48.xbm"
+  "weechat"              "chat48x48.xbm"
+  "wpa_gui"              "network48x48.xbm"
+  "ceni"                 "network48x48.xbm"
+  "Wicd Network Manager" "network48x48.xbm"
+  "rtorrent"             "torrent48x48.xbm"
+  "transmission"         "torrent48x48.xbm"
+  "utorrent"             "torrent48x48.xbm"
+# Office
+  "zathura"              "pdf48x48.xbm"
+  "mupdf"                "pdf48x48.xbm"
+  "okular"               "pdf48x48.xbm"
+  "evince"               "pdf48x48.xbm"
+  "abiword"              "edit48x48.xbm"
+  "sc"                   "spreadsheet48x48.xbm"
+  "gnumeric"             "spreadsheet48x48.xbm"
+# Graphics
+  "bitmap"               "bitmap48x48.xbm"
+  "pixmap"               "bitmap48x48.xbm"
+  "gimp"                 "gimp48x48.xbm"
+  "mpv"                  "film48x48.xbm"
+  "vlc"                  "film48x48.xbm"
+# VTWM
+  "Binds"                "keyboard48x48.xbm"
+  "Icons"                "icons48x48.xbm"
+  "Main"                 "main48x48.xbm"
+  "Menus"                "menus48x48.xbm"
+  "Layout"               "layout48x48.xbm"
+  "Fonts"                "fonts48x48.xbm"
+  "Cursors"              "cursors48x48.xbm"
+  "Theme"                "theme48x48.xbm"
+}

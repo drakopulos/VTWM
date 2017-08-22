@@ -1,0 +1,43 @@
+! SymbOS
+URxvt.background:   #100d02
+URxvt.foreground:   #6c4a1e
+URxvt.cursorColor:  #6c4a1e
+
+URxvt.color0:       #131002
+URxvt.color1:       #6c461e
+URxvt.color2:       #815924
+URxvt.color3:       #936629
+URxvt.color4:       #a7742e
+URxvt.color5:       #a7742e
+URxvt.color6:       #be8434
+URxvt.color7:       #d09039
+URxvt.color8:       #131002
+URxvt.color9:       #6c4a1e
+URxvt.color10:      #815924
+URxvt.color11:      #936629
+URxvt.color12:      #936629
+URxvt.color13:      #a7742e
+URxvt.color14:      #be8434
+URxvt.color15:      #be8434
+
+! SymbOS
+*background:   #100d02
+*foreground:   #6c4a1e
+*cursorColor:  #6c4a1e
+
+*color0:       #131002
+*color1:       #6c461e
+*color2:       #815924
+*color3:       #936629
+*color4:       #a7742e
+*color5:       #a7742e
+*color6:       #be8434
+*color7:       #d09039
+*color8:       #131002
+*color9:       #6c4a1e
+*color10:      #815924
+*color11:      #936629
+*color12:      #936629
+*color13:      #a7742e
+*color14:      #be8434
+*color15:      #be8434

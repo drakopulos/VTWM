@@ -1,0 +1,43 @@
+! labs-grey
+*background:   #737260
+*foreground:   #eae5ca
+*cursorColor:  #eae5ca
+
+*color0:       #22221c
+*color1:       #45453a
+*color2:       #3a3a31
+*color3:       #a09e84
+*color4:       #303028
+*color5:       #d5d1ae
+*color6:       #c2bf9c
+*color7:       #dcdab3
+*color8:       #303028
+*color9:       #48483d
+*color10:      #a3a38b
+*color11:      #494838
+*color12:      #bdba99
+*color13:      #3e3c30
+*color14:      #c1bd9d
+*color15:      #e2e1c9
+
+! labs-grey
+URxvt.background:   #737260
+URxvt.foreground:   #eae5ca
+URxvt.cursorColor:  #eae5ca
+
+URxvt.color0:       #22221c
+URxvt.color1:       #45453a
+URxvt.color2:       #3a3a31
+URxvt.color3:       #a09e84
+URxvt.color4:       #303028
+URxvt.color5:       #d5d1ae
+URxvt.color6:       #c2bf9c
+URxvt.color7:       #dcdab3
+URxvt.color8:       #303028
+URxvt.color9:       #48483d
+URxvt.color10:      #a3a38b
+URxvt.color11:      #494838
+URxvt.color12:      #bdba99
+URxvt.color13:      #3e3c30
+URxvt.color14:      #c1bd9d
+URxvt.color15:      #e2e1c9

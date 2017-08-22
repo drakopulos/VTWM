@@ -1,0 +1,53 @@
+#!/bin/bash
+
+echo "Enter new foreground color (ex: ffffff):"
+read FG
+echo "Enter new background color/shadows (ex: 000000):"
+read BG
+
+mkdir -p cli-curs-"$FG"-"$BG"/cursors
+mkdir -p cli-curs-"$FG"-"$BG"/src
+touch cli-curs-"$FG"-"$BG"/cli-curs-"$FG"-"$BG".theme
+
+cat << EOF > cli-curs-"$FG"-"$BG"/cli-curs-"$FG"-"$BG".theme
+
+[Icon Theme]
+Inherits=cli-curs-$FG-$BG
+
+EOF
+
+ND=cli-curs-"$FG"-"$BG"/cursors
+SD=cli-curs-"$FG"-"$BG"/src
+INS=cli-curs-"$FG"-"$BG"
+
+cp *.xpm "$ND"
+cp *.in "$ND"
+
+cd "$ND"
+echo
+echo
+echo "new cursor theme path:" ; pwd
+echo
+echo
+
+for file in *.xpm; do
+  sed -i -e "s/ffffff/${FG}/g" -e "s/000000/${BG}/g" "$file"
+  convert "$file" "$(basename $file .xpm).png"
+done
+
+for i in *.in; do
+  xcursorgen "$i" "$(basename $i .in)"
+done
+
+mv *.in ../src
+mv *.xpm ../src
+mv *.png ../src
+
+cd ../../
+read -r -p "Install to /usr/share/icons? [y/N] " response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
+  then
+    sudo cp -r "$INS" /usr/share/icons
+  else
+    echo "goodbye" ; exit 0
+fi

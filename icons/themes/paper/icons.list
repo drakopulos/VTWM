@@ -1,0 +1,116 @@
+#  _ __   __ _ _ __   ___ _ __ 
+# | '_ \ / _` | '_ \ / _ \ '__|
+# | |_) | (_| | |_) |  __/ |   
+# | .__/ \__,_| .__/ \___|_|   
+# |_|         |_|              
+#    _
+#   (_) ___ ___  _ __  ___ 
+#   | |/ __/ _ \| '_ \/ __|
+#   | | (_| (_) | | | \__ \
+#   |_|\___\___/|_| |_|___/
+
+ForceIcons
+IconDirectory "VTWMD/icons/themes/paper"
+define(`ICON_WIDTH', `24')
+define(`ICON_HEIGHT', `24')
+
+Icons {
+# terminals
+  "term"                 "terminator24x24.xpm"
+  "x-terminal-emulator"  "terminator24x24.xpm"
+  "urxvt"                "terminator24x24.xpm"
+  "xterm"                "terminator24x24.xpm"
+  "terminator"           "terminator24x24.xpm"
+# file managers
+  "file"                 "folder-saved-search24x24.xpm"
+  "ranger"               "folder-saved-search24x24.xpm"
+  "pcmanfm"              "folder-saved-search24x24.xpm"
+  "spacefm"              "folder-saved-search24x24.xpm"
+  "thunar"               "folder-saved-search24x24.xpm"
+# accessories
+  "xcalc"           "accessories-calculator24x24.xpm"
+  "galculator"           "accessories-calculator24x24.xpm"
+  "calcurse"             "office-calendar24x24.xpm"
+  "proc"                 "utilities-system-monitor24x24.xpm"
+  "htop"                 "utilities-system-monitor24x24.xpm"
+  "top"                  "utilities-system-monitor24x24.xpm"
+  "glances"              "utilities-system-monitor24x24.xpm"
+  "nano"                 "accessories-text-editor24x24.xpm"
+  "gedit"                "accessories-text-editor24x24.xpm"
+  "vim"                  "accessories-text-editor24x24.xpm"
+  "vim.tiny"             "accessories-text-editor24x24.xpm"
+  "gvim"                 "gvim24x24.xpm" 
+  "emacs"                "emacs24x24.xpm"
+  "leafpad"              "accessories-text-editor24x24.xpm"
+  "filezilla"            "filezilla24x24.xpm"
+  "file-roller"          "archive-manager24x24.xpm"
+  "catfish"              "preferences-system-search24x24.xpm"
+  "search"               "preferences-system-search24x24.xpm"
+  "file-roller"          "archive-manager24x24.xpm"
+  "xfontsel"             "preferences-desktop-font24x24.xpm"
+# networking
+  "xombrero"             "internet-web-browser24x24.xpm"
+  "chromium"             "chromium24x24.xpm"
+  "google-chrome"        "web-google24x24.xpm"
+  "Iceweasel"            "iceweasel24x24.xpm"
+  "Firefox"              "firefox24x24.xpm"
+  "Mutt"                 "internet-mail.xpm"
+  "w3m"                  "internet-web-browser24x24.xpm"
+  "elinks"               "internet-web-browser24x24.xpm"
+  "ELinks"               "internet-web-browser24x24.xpm"
+  "links"                "internet-web-browser24x24.xpm"
+  "links2"               "internet-web-browser24x24.xpm"
+  "Links"                "internet-web-browser24x24.xpm"
+  "Links 2 (text)"       "internet-web-browser24x24.xpm"
+  "Irssi"                "internet-chat24x24.xpm"
+  "xchat"                "internet-chat24x24.xpm"
+  "hexchat"              "internet-chat24x24.xpm"
+  "weechat"              "internet-chat24x24.xpm"
+  "wpa_gui"              "network-wireless.xpm"
+  "ceni"                 "network-wireless.xpm"
+  "Wicd Network Manager" "network-wireless.xpm"
+  "rtorrent"             "transmission24x24.xpm"
+  "transmission"         "transmission24x24.xpm"
+  "utorrent"             "transmission24x24.xpm"
+# audio video
+  "mocp"                 "multimedia-audio-player24x24.xpm"
+  "mpd"                  "multimedia-audio-player24x24.xpm"
+  "audacious"            "multimedia-audio-player24x24.xpm"
+  "arandr"               "preferences-desktop-display24x24.xpm"
+  "alsamixer"            "audio24x24.xpm"
+  "alsa"                 "audio24x24.xpm"
+  "vol"                  "audio24x24.xpm"
+  "volume"               "audio24x24.xpm"
+  "pavucontrol"          "audio24x24.xpm"
+  "vlc"                  "vlc24x24.xpm"
+  "mpv"                  "mpv24x24.xpm"
+  "audacity"             "audacity24x24.xpm"
+  "xfburn"               "disk-burner24x24.xpm"
+# graphics
+  "blender"              "blender24x24.xpm"
+  "inkscape"             "inkscape24x24.xpm"
+  "filezilla"            "filezilla24x24.xpm"
+  "gimp"                 "gimp24x24.xpm"
+  "pixmap"               "image-x-generic24x24.xpm"
+  "bitmap"               "image-x-generic24x24.xpm"
+# office
+  "zathura"              "pdf-utility24x24.xpm"
+  "okular"               "pdf-utility24x24.xpm"
+  "evince"               "pdf-utility24x24.xpm"
+  "libreoffice-writer"   "libreoffice-writer24x24.xpm"
+  "libreoffice-calc"     "libreoffice-calc24x24.xpm"
+  "libreoffice-impress"  "libreoffice-impress24x24.xpm"
+  "libreoffice-draw"     "libreoffice-draw24x24.xpm"
+  "libreoffice-base"     "libreoffice-base24x24.xpm"
+  "libreoffice-"         "libreoffice-24x24.xpm"
+# vtwm
+  "Main"                 "preferences-desktop24x24.xpm"
+  "Menus"                "preferences-system-windows24x24.xpm"
+  "Binds"                "preferences-desktop-keyboard-shortcuts24x24.xpm"
+  "Layout"               "preferences-desktop-display24x24.xpm"
+  "Fonts"                "preferences-desktop-font24x24.xpm"
+  "Theme"                "preferences-color24x24.xpm"
+  "Icons"                "preferences-desktop-theme24x24.xpm"
+
+}
+UnknownIcon "VTWMD/icons/themes/paper/dialog-question24x24.xpm"

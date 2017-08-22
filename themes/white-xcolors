@@ -1,0 +1,41 @@
+! labs URxvt
+URxvt.background:   #eae5c1
+URxvt.foreground:   #36352e
+URxvt.cursorColor:  #36352e
+URxvt.color0:       #444333
+URxvt.color1:       #54523f
+URxvt.color2:       #64624b
+URxvt.color3:       #747157
+URxvt.color4:       #848163
+URxvt.color5:       #94906f
+URxvt.color6:       #a4a07b
+URxvt.color7:       #b4b087
+URxvt.color8:       #444333
+URxvt.color9:       #54523f
+URxvt.color10:      #64624b
+URxvt.color11:      #747157
+URxvt.color12:      #848163
+URxvt.color13:      #94906f
+URxvt.color14:      #a4a07b
+URxvt.color15:      #b4b087
+
+! labs xcolor
+*foreground:   #36352e
+*background:   #eae5c1
+*cursorColor:  #36352e
+*color0:       #444333
+*color1:       #54523f
+*color2:       #64624b
+*color3:       #747157
+*color4:       #848163
+*color5:       #94906f
+*color6:       #a4a07b
+*color7:       #b4b087
+*color8:       #444333
+*color9:       #54523f
+*color10:      #64624b
+*color11:      #747157
+*color12:      #848163
+*color13:      #94906f
+*color14:      #a4a07b
+*color15:      #b4b087

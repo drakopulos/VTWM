@@ -1,0 +1,77 @@
+#      _                 _       
+#  ___| |_ _ __ ___  ___| |_ ___ 
+# / __| __| '__/ _ \/ _ \ __/ __|
+# \__ \ |_| | |  __/  __/ |_\__ \
+# |___/\__|_|  \___|\___|\__|___/
+#                               
+#    _   _                         
+#   | |_| |__   ___ _ __ ___   ___ 
+#   | __| '_ \ / _ \ '_ ` _ \ / _ \
+#   | |_| | | |  __/ | | | | |  __/
+#    \__|_| |_|\___|_| |_| |_|\___|
+#
+
+## Background color/image
+syscmd(`hsetroot -solid "#6f6951"')
+
+## Merge Xcolors
+syscmd(`xrdb -merge ~/.config/vtwm/themes/streets-xcolors')
+
+## FONTS (vars)
+include(VTWMD/fonts/fixed-01)
+
+## CURSORS (vars)
+include(VTWMD/cursors/cursor-list-01)
+
+## ICONS
+include(VTWMD/icons/themes/retro/icons.list)
+
+SqueezeTitle
+NoMenuShadows
+FramePadding    12
+
+Color
+{
+  BorderColor "#71322b"
+  BorderTileBackground "#100d02"
+  BorderTileForeground "#100d02"
+
+  DefaultBackground         "#100d02"
+  DefaultForeground         "#91875e"
+  TitleBackground           "#100d02"
+  TitleForeground           "#91875e"
+  MenuBackground            "#100d02"
+  MenuForeground            "#6f6951"
+  MenuTitleBackground       "#100d02"
+  MenuTitleForeground       "#6f6951"
+#  MenuShadowColor           "#91875e"
+  IconBackground            "#100d02"
+  IconForeground            "#6f6951"
+  IconBorderColor           "#100d02"
+  IconManagerBackground     "#100d02"
+  IconManagerForeground     "#91875e"
+  IconManagerHighlight      "#91875e"
+  RealScreenBackground      "#7a2a21"
+  VirtualBackground         "#100d02"
+  VirtualForeground         "#91875e"
+  DesktopDisplayBackground  "#100d02"
+  DesktopDisplayForeground  "#91875e"
+  DesktopDisplayBorder      "#91875e"
+}
+
+Pixmaps {
+  IconManagerPixmap        "VTWMD/icons/pixmaps/colon.xbm"
+  MenuIconPixmap           "VTWMD/icons/pixmaps/menu-lines16x16.xbm" 
+}
+
+##  Buttons
+LeftTitleButton "VTWMD/icons/pixmaps/iconify5x5.xbm" = f.iconify
+RightTitleButton "VTWMD/icons/pixmaps/x5x5.xbm" = f.delete
+RightTitleButton "VTWMD/icons/pixmaps/resize5x5.xbm" = f.resize
+
+Sounds
+{
+ "(vtwm start)"  "SoundDir/paper-start.wav" 30
+ "(vtwm stop)"   "SoundDir/paper-stop.wav" 30
+ "f.iconify"     "SoundDir/iconify.wav" 30
+}

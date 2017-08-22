@@ -1,0 +1,34 @@
+/* XPM */
+static char *workspace_switcher_top_left_12[] = {
+/* columns rows colors chars-per-pixel */
+"24 24 4 1 ",
+"  c gray30",
+". c #48ACDC",
+"X c #4AB3E4",
+"o c None",
+/* pixels */
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"o                      o",
+"o                      o",
+"o                      o",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"o.XXXXXXXXXXXXXXXXXXXX.o",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo"
+};

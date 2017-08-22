@@ -1,0 +1,15 @@
+/* XPM */
+static char * sb_left_arrow_xpm[] = {
+"16 9 3 1 9 4",
+" 	c None",
+".	c #eeeeec",
+"X	c #2e3436",
+"    .           ",
+"   ..           ",
+"  .X.           ",
+" .XX............",
+".XXXXXXXXXXXXXX.",
+" .XX............",
+"  .X.           ",
+"   ..           ",
+"    .           "};

@@ -1,0 +1,33 @@
+/* XPM */
+static char * search24x24_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"24 24 4 1",
+" 	c None",
+".	c #5e483a",
+"X	c #B2A87E",
+"o	c #26524d",
+/* pixels */
+"  ....................  ",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+".XXXoooooooXXXXXXXXXXXX.",
+".XXoooooooooXXXXXXXXXXX.",
+".XoooXXXXXoooXXXXXXXXXX.",
+".XooXXXXXXXooXXXXXXXXXX.",
+".XooXXXXXXXooXXXXXXXXXX.",
+".XooXXXXXXXooXXXXXXXXXX.",
+".XooXXXXXXXooXXXXXXXXXX.",
+".XooXXXXXXXooXXXXXXXXXX.",
+".XoooXXXXXoooXXXXXXXXXX.",
+".XXooooooooooXXXXXXXXXX.",
+".XXXooooooooooXXXXXXXXX.",
+".XXXXXXXXXXXoooXXXXXXXX.",
+".XXXXXXXXXXXXoooXXXXXXX.",
+".XXXXXXXXXXXXXoooXXXXXX.",
+".XXXXXXXXXXXXXXoooXXXXX.",
+".XXXXXXXXXXXXXXXoooXXXX.",
+".XXXXXXXXXXXXXXXXoooXXX.",
+".XXXXXXXXXXXXXXXXXoooXX.",
+".XXXXXXXXXXXXXXXXXXooXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+" .XXXXXXXXXXXXXXXXXXXX. ",
+"  ....................  "};

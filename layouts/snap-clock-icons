@@ -1,0 +1,80 @@
+#######################################################
+#  _                         _
+# | | __ _ _   _  ___  _   _| |_
+# | |/ _` | | | |/ _ \| | | | __|
+# | | (_| | |_| | (_) | |_| | |_
+# |_|\__,_|\__, |\___/ \__,_|\__|
+#          |___/ 
+# 
+# Snap Clock |
+# "Icons" "Hide Icon Manager" "Virtual Desktop"
+#
+# This layout requires a clock to be autostarted in 
+# xsession, otherwise desktop won't load. The clock 
+# should be started with title and name "clock" and a minimum 
+# 1 sec sleep in order for the macros to calculate its 
+# geometries. 
+#
+# Icons, Icon Manager and virtual desktop will be fitted 
+# around clock position on desktop. hopefully...
+#
+
+###################
+# Padding
+#
+define(`VPAD', 10)
+define(`HPAD', 10)
+
+#################################################################################
+# Clock
+# CVP=clock-vert-position CH=clock-height CHP=clock-horz-position CW=clock-width
+#
+define(`CVP', esyscmd(xwininfo -name clock | sed "s/+/ /g" | sed "s/-/ /g" | awk '/Corners/{ print $3 }' ))
+define(`CH',  esyscmd(xwininfo -name clock | awk '/Height/{print $2}'))
+define(`CHP', esyscmd(xwininfo -name clock | sed "s/+/ /g" | sed "s/-/ /g" | awk '/Corners/{ print $2 }' ))
+define(`CW',  esyscmd(xwininfo -name clock | awk '/Width/{print $2}'))
+
+#################################################################################
+# VirtualDesktop
+#
+define(VDhoriz, 3) define(VDvert, 2) define(VDscale, 32)
+define(VDWidth, eval(WIDTH * VDhoriz / VDscale))
+define(VDHeight, eval(HEIGHT * VDvert / VDscale))
+define(`VDX_lft', `+HPAD')
+define(`VDX_rgh', `-HPAD')
+define(`VDY_top', `+VPAD')
+define(`VDY_bot', `-VPAD')
+define(`ClockHorPosTest', `eval(CHP > WIDTH/2)')
+define(`ClockVerPosTest', `eval(CVP > HEIGHT/2)')
+define(`VDx', ifelse(ClockHorPosTest,0,VDX_rgh,ClockHorPosTest,1,VDX_lft))
+define(`VDy', ifelse(ClockVerPosTest,0,VDY_top,ClockVerPosTest,1,VDY_bot))
+define(VDgeometry, translit(VDhoriz*VDvert`'VDx`'VDy, *, x))
+VirtualDesktop  "VDgeometry" VDscale
+
+##################################################################################
+# Icons
+#
+define(`ICW', eval(WIDTH-(CW+VDWidth+HPAD*3)))
+define(`ICH', eval(ICON_HEIGHT+VPAD*3))
+#define(`ICH', eval(ICON_HEIGHT*2+VPAD))
+define(`ICxClock', +eval(HPAD*2+CW+CHP))
+define(`ICxVD', +eval(HPAD*2+VDWidth))
+define(`ICyTop', +VPAD)
+define(`ICyBot', -VPAD)
+define(`ICx', ifelse(VDx,VDX_lft,ICxVD,ICxClock))
+define(`ICy', ifelse(VDy,VDY_top,ICyTop,ICyBot))
+define(`ICR', translit(ICW*ICH`'ICx`'ICy, *, x ))
+IconRegion "ICR" West North 1 1
+
+###################################################################################
+# Icon Manager
+#
+#ShowIconManager
+define(`ICMWidth',`150')
+define(`ICMHeight',`10')
+define(`_ICMy', ifelse(VDy,VDY_top,+eval(VDHeight+VPAD+VPAD),+VPAD))
+define(`ICMx', `-HPAD')
+define(`ICMy', `_ICMy')
+define(ICMR, translit(ICMWidth*ICMHeight`'ICMx`'ICMy, *, x ))
+define(ICC, 1)
+IconManagerGeometry "ICMR" ICC
